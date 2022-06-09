@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/1705254/pexels-photo-1705254.jpeg?cs=srgb&dl=pexels-damon-hall-1705254.jpg&fm=jpg);
+}
+
+nav {
+    background: rgb(32, 44, 85);
+}
+
+.row {
+    position: relative;
+    top: -25px;
+}
+
+.card {
+    margin: 10px 20px;
+}
+
+form .d-flex {
+    position: relative;
+    margin-right: 40px;
+}
+
+nav {
+    padding: 0 20px;
+}
+
+#btn-search {
+    width: 150px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* tr {
+    position: relative;
+    margin-bottom: 10px;
+} */
+
+nav {
+    padding: 0 20px;
+}
+
+#btn-search {
+    width: 150px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    color: #222;
+}
+
+#setTour {
+    margin: 0 15px 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row img {
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+}

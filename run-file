@@ -1,0 +1,4 @@
+Run-file:
+1.Chạy bash(1): nodemon server.js
+2.Chạy bash(2): npm run start
+3.http://localhost:3000/

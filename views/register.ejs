@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký</title>
+  <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  html,body{
+    display: grid;
+    place-items: center;
+    margin-top: 70px;
+    background: -webkit-linear-gradient(left, #8181F7, #00FFFF);
+  }
+  .dk{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    float: left;
+    border-radius: 5px;
+  }
+
+  .dk form input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-bottom-width: 2px;
+    margin-top: 20px;
+  }
+  h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  button{
+    width: 150px;
+    padding: 10px 20px 10px 20px;
+    border: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(left, #A9BCF5, #A9F5F2);
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .dn{
+    text-decoration: none;
+    color: rgb(13, 200, 225);
+  }
+  </style>
+</head>
+<body>
+<div class="dk">
+  <h1>Đăng ký</h1>
+  <form action="/register" method="POST">
+    <div>
+      <input style="margin-top: 40px;" type="text" id="name" name="name" required placeholder="Tên">
+    </div>
+    <div>
+      <input type="email" id="email" name="email" required placeholder="Email">
+    </div>
+    <div>
+      <input type="password" id="password" name="password" required placeholder="Mật khẩu">
+    </div>
+    <button type="submit">Đăng ký</button><br>
+    <p>Đã có tài khoản?</p>
+    <a class="dn" href="/login">Đăng nhập</a>
+  </form>
+</div>
+</body>
+</html>

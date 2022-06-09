@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập</title>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  html,body{
+    display: grid;
+    place-items: center;
+    margin-top: 70px;
+    background: -webkit-linear-gradient(left, #8181F7, #00FFFF);
+  }
+  .dn{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    float: left;
+    border-radius: 5px;
+  }
+
+  .dn form input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-bottom-width: 2px;
+    margin-top: 30px;
+  }
+  h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  button{
+    width: 150px;
+    padding: 10px 20px 10px 20px;
+    border: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(left, #A9BCF5, #A9F5F2);
+    margin-bottom: 30px;
+  }
+  .dk{
+    text-decoration: none;
+    color: rgb(13, 200, 225);
+  }
+</style>
+</head>
+<body>
+<div class="dn">
+  <h1>Đăng nhập</h1>
+  <% if (messages.error) { %>
+    <%= messages.error %>
+  <% } %>
+  <form action="/login" method="POST">
+    <div>
+      <input style="margin-top: 70px;" type="email" id="email" name="email" required placeholder="Email">
+    </div>
+    <div>
+      <input style="margin-bottom: 60px;" type="password" id="password" name="password" required placeholder="Mật khẩu">
+    </div>
+    <button type="submit">Đăng nhập</button><br>
+    <p>Chưa có tài khoản?</p>
+    <a class="dk" href="/register">Tạo 1 tài khoản mới</a>
+  </form>
+  
+</div>
+</body>
+</html>

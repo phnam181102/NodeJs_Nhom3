@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chào mừng</title>
+  <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  html,body{
+    display: grid;
+    place-items: center;
+    margin-top: 70px;
+    background: -webkit-linear-gradient(left, #8181F7, #00FFFF);
+  }
+  .bang{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    float: left;
+    border-radius: 5px;
+  }
+  h1{
+    text-align: center;
+    font-size: 35px;
+  }
+  button{
+    width: 150px;
+    padding: 10px 20px 10px 20px;
+    border: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(left, #A9BCF5, #A9F5F2);
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  p{
+    margin-top: 50px;
+    margin-bottom: -40px;
+    font-size: 25px;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: red;
+  }
+  </style>
+</head>
+<body>
+  <div class="bang">
+    <h1>Chào mừng <br>
+       <%= name %> <br>
+      đến với website của chúng tôi.</h1>
+    <p>Vào giao diện website</p>
+    <button><a href="http://localhost:4000/tour">Giao diện</a></button>
+    <p>Sử dụng tài khoản khác</p>
+    <form action="/logout?_method=DELETE" method="POST">
+      <button type="submit">Đăng xuất</button>
+    </form>
+  </div>
+</body>
+</html>
